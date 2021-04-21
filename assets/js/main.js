@@ -2,27 +2,93 @@
     $('#currentDay').text(today.format('dddd, MMMM Do'))
 
 
-    var hourTime = today.format('hh')
+    var hourTime = today.format('H')
     var currentHour = parseInt(hourTime, 10)
 
-    console.log(currentHour)
+    
+    var changeColorNine = function(){
+        if (currentHour === 9) {
+            $("#nine").addClass('present')}         
+        else if (currentHour > 9) {
+            $("#nine").addClass('past')}
+        else {
+            $("#nine").addClass('future')}
+        }
+    
+    var changeColorTen = function(){
+        if (currentHour === 10) {
+            $("#ten").addClass('present')}         
+        else if (currentHour > 10) {
+            $("#ten").addClass('past')}
+        else {
+            $("#ten").addClass('future')}
+        }
+    
+    var changeColorEleven = function(){
+        if (currentHour === 11) {
+            $("#eleven").addClass('present')}         
+        else if (currentHour > 11) {
+            $("#eleven").addClass('past')}
+        else {
+            $("#eleven").addClass('future')}
+        }
+    
+    var changeColorTwelve = function(){
+        if (currentHour === 12) {
+            $("#twelve").addClass('present')}         
+        else if (currentHour > 12) {
+            $("#twelve").addClass('past')}
+        else {
+            $("#twelve").addClass('future')}
+        }
+    
+    var changeColorOne = function(){
+        if (currentHour === 13) {
+            $("#one").addClass('present')}         
+        else if (currentHour > 13) {
+            $("#one").addClass('past')}
+        else {
+            $("#one").addClass('future')}
+        }
+    
+    var changeColorTwo = function(){
+        if (currentHour === 14) {
+            $("#two").addClass('present')}         
+        else if (currentHour > 14) {
+            $("#two").addClass('past')}
+        else {
+            $("#two").addClass('future')}
+        }
+    
+    var changeColorThree = function(){
+        if (currentHour === 15) {
+            $("#three").addClass('present')}         
+        else if (currentHour > 15) {
+            $("#three").addClass('past')}
+        else {
+            $("#three").addClass('future')}
+        }
+    
+    var changeColorFour = function(){
+        if (currentHour === 16) {
+            $("#four").addClass('present')}         
+        else if (currentHour > 16) {
+            $("#four").addClass('past')}
+        else {
+            $("#four").addClass('future')}
+        }
+    changeColorFour()
+
+    var changeColorFive = function(){
+        if (currentHour === 17) {
+            $("#five").addClass('present')}         
+        else if (currentHour > 17) {
+            $("#five").addClass('past')}
+        else {
+            $("#five").addClass('future')}
+        }
 
 
-    
-    var changeColor = function(){
-        if(currentHour < 6){
-        $("textarea").addClass("past")}
-    }
-
-    changeColor()
-    
-    
-    setInterval(function() {
-        location.reload(true)
-      }, 3600000);
-    
-    
-    
     
     
     $('#nine').text(localStorage.getItem('nine'))
@@ -90,5 +156,17 @@
         $('#five').text(localStorage.getItem('five'))
     })
     
-
+    changeColorNine()
+    changeColorTen()
+    changeColorEleven()
+    changeColorTwelve()
+    changeColorOne()
+    changeColorTwo()
+    changeColorThree()
+    changeColorFour()
+    changeColorFive()
+        
+    setInterval(function() {
+        location.reload(true)
+      }, 3600000); 
 
