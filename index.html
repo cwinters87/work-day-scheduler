@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -29,73 +28,68 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-9" class="hour">9AM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="nine" class="description"></textarea></div>
         <div class="col-1 nopadding"><button type="button" id="nine-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div>        
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-10" class="hour">10AM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="ten" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="ten-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div>
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-11" class="hour">11AM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="eleven" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="eleven-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div>
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-12" class="hour">12PM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="twelve" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="twelve-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div>
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-1" class="hour">1PM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="one" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="one-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div> 
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-2" class="hour">2PM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="two" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="two-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div> 
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-3" class="hour">3PM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="three" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="three-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div> 
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-4" class="hour">4PM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="four" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="four-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div> 
-
       <div class="row">
         <div class="col-1 nopadding"><div><div class="time-block"><p id="hour-5" class="hour">5PM</p></div></div></div>
         <div class="col-10 nopadding"><textarea id="five" class="description"></textarea></div>
         <div class="col-1 nopadding"><button id="five-btn" class="saveBtn"><i class="fa">&#xf0c7;</i>
         </button></div>
       </div>
-
     </div>
-    <footer></footer>
+
+  <!--I added a clear storage button to get a refreshed clean look if needed-->
+    <footer>
+      <div>
+        <button id="clear-btn">Clear Schedule</button>
+      </div>      
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

@@ -1,11 +1,12 @@
+    // Get today's date
     const today = moment()    
     $('#currentDay').text(today.format('dddd, MMMM Do'))
 
-
+    // Get the current time and convert the hour into a number
     var hourTime = today.format('H')
     var currentHour = parseInt(hourTime, 10)
 
-    
+    // Use that hour number to run if statements to see if time to change color to idicate current, past, or future. run a reload function later to check every hour
     var changeColorNine = function(){
         if (currentHour === 9) {
             $("#nine").addClass('present')}         
@@ -87,10 +88,8 @@
         else {
             $("#five").addClass('future')}
         }
-
-
     
-    
+    //set the text in each textarea div to match what is in local storage
     $('#nine').text(localStorage.getItem('nine'))
     $('#ten').text(localStorage.getItem('ten'))
     $('#eleven').text(localStorage.getItem('eleven'))
@@ -100,8 +99,9 @@
     $('#three').text(localStorage.getItem('three'))
     $('#four').text(localStorage.getItem('four'))
     $('#five').text(localStorage.getItem('five'))
-
-
+    
+    
+    // Button listens to save new text to local storage and display the text
     $("#nine-btn").click(function(){
         var textarea = $.trim($("#nine").val())
         localStorage.setItem('nine', textarea)
@@ -156,6 +156,7 @@
         $('#five').text(localStorage.getItem('five'))
     })
     
+    //run these functions each time the page loads
     changeColorNine()
     changeColorTen()
     changeColorEleven()
@@ -165,8 +166,15 @@
     changeColorThree()
     changeColorFour()
     changeColorFive()
-        
+
+    //reload page every hour to reset the colors    
     setInterval(function() {
         location.reload(true)
       }, 3600000); 
 
+    // A clear-schedule button that I added. Just wanted a way to rest local storage
+    $("#clear-btn").click(function(){    
+        $('textarea').text('')    
+        localStorage.clear()
+        location.reload(true)
+    })
