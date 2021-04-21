@@ -14,6 +14,54 @@
         localStorage.setItem('nine', textarea)
         $('#nine').text(localStorage.getItem('nine'))
     })
+
+    $("#ten-btn").click(function(){
+        var textarea = $.trim($("#ten").val())
+        localStorage.setItem('ten', textarea)
+        $('#ten').text(localStorage.getItem('ten'))
+    })
+
+    $("#eleven-btn").click(function(){
+        var textarea = $.trim($("#eleven").val())
+        localStorage.setItem('eleven', textarea)
+        $('#eleven').text(localStorage.getItem('eleven'))
+    })
+
+    $("#twelve-btn").click(function(){
+        var textarea = $.trim($("#twelve").val())
+        localStorage.setItem('twelve', textarea)
+        $('#twelve').text(localStorage.getItem('twelve'))
+    })
+
+    $("#one-btn").click(function(){
+        var textarea = $.trim($("#one").val())
+        localStorage.setItem('one', textarea)
+        $('#one').text(localStorage.getItem('one'))
+    })
+    
+    $("#two-btn").click(function(){
+        var textarea = $.trim($("#two").val())
+        localStorage.setItem('two', textarea)
+        $('#two').text(localStorage.getItem('two'))
+    })
+
+    $("#three-btn").click(function(){
+        var textarea = $.trim($("#three").val())
+        localStorage.setItem('three', textarea)
+        $('#three').text(localStorage.getItem('three'))
+    })
+
+    $("#four-btn").click(function(){
+        var textarea = $.trim($("#four").val())
+        localStorage.setItem('four', textarea)
+        $('#four').text(localStorage.getItem('four'))
+    })
+
+    $("#five-btn").click(function(){
+        var textarea = $.trim($("#five").val())
+        localStorage.setItem('five', textarea)
+        $('#five').text(localStorage.getItem('five'))
+    })
     
 
 
