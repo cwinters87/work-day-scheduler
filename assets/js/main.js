@@ -1,3 +1,30 @@
+    const today = moment()    
+    $('#currentDay').text(today.format('dddd, MMMM Do'))
+
+
+    var hourTime = today.format('hh')
+    var currentHour = parseInt(hourTime, 10)
+
+    console.log(currentHour)
+
+
+    
+    var changeColor = function(){
+        if(currentHour < 6){
+        $("textarea").addClass("past")}
+    }
+
+    changeColor()
+    
+    
+    setInterval(function() {
+        location.reload(true)
+      }, 3600000);
+    
+    
+    
+    
+    
     $('#nine').text(localStorage.getItem('nine'))
     $('#ten').text(localStorage.getItem('ten'))
     $('#eleven').text(localStorage.getItem('eleven'))
