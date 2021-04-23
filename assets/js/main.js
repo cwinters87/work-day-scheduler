@@ -170,11 +170,17 @@
     //reload page every hour to reset the colors    
     setInterval(function() {
         location.reload(true)
-      }, 3600000); 
+      }, 300000); 
 
     // A clear-schedule button that I added. Just wanted a way to rest local storage
     $("#clear-btn").click(function(){    
-        $('textarea').text('')    
+        var x = confirm('Are you sure you want to delete all the events on the scheduler?')
+        if (x == true) {
+            $('textarea').text('')    
         localStorage.clear()
         location.reload(true)
+        }
+        else {
+            return
+        }
     })
